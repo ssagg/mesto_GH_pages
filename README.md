@@ -10,7 +10,7 @@ HTML, CSS, flex, grid, media запросы, JavaScript
 Добавление фотографий пользователей
 
 ### GitHub Pages
-https://ssagg.github.io/russian-travel_GH_pages_test/
+https://ssagg.github.io/mesto_GH_pages/
 
 
 ### Author
