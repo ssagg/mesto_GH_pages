@@ -1,4 +1,4 @@
-.popup {
+.popup-image {
   visibility: hidden;
   opacity: 0;
   transition: visibility .5s linear, opacity .5s linear;
@@ -8,8 +8,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }

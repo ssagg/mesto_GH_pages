@@ -7,7 +7,7 @@
 HTML, CSS, flex, grid, media запросы, JavaScript
 
 ### TODO
-Добавление фотографий пользователей
+Валидация форм
 
 ### GitHub Pages
 https://ssagg.github.io/mesto_GH_pages/

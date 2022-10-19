@@ -7,9 +7,7 @@
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  margin-top: 40px;
-  margin-left: 36px;
-  border-radius: 2px;
+  margin: 48px 36px 37px;
   border: 1px;
 }
 
@@ -20,13 +18,12 @@
 
 @media screen and (max-width: 530px) {
   .popup__button-submit {
-    width: 238px;
+    max-width: 238px;
     height: 46px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 45px 22px 25px;
   }
 }
