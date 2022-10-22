@@ -25,7 +25,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .elements {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
