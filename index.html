@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="pages/index.css">
-  <script src="./scripts/index.js" defer></script>
-  <script src="./scripts/array.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
   <title>Mesto</title>
 </head>
 
@@ -20,11 +19,11 @@
         <img class="profile__avatar" src="./images/avatar.png" alt="аватар">
         <div class="profile__info">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button class="profile__edit-button" type="button">
+          <button aria-label="Edit Profile"  class="profile__edit-button" type="button">
           </button>
           <p class="profile__about">Исследователь океана</p>
         </div>
-        <button class="profile__add-button" type="button">
+        <button aria-label="Add Place" class="profile__add-button" type="button">
         </button>
       </section>
 
@@ -40,48 +39,52 @@
 
     <div class="popup popup-profile" id="popup-edit" >
       <div class="popup__container">
-        <button class="popup__button-close" type="button"></button>
+        <button aria-label="Close" class="popup__button-close popup-profile__button-close" type="button"></button>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form" name="profile-edit" id="profile-edit">
+        <form class="popup__form popup-profile__form" name="profile-edit" id="profile-edit" novalidate>
           <input type="text" class="popup__input popup__input_type_name" placeholder="Ваше имя" id="profile-name"
-            name="profile-name">
+            name="profile-name" minlength="2" maxlength="40" required>
+            <span class="popup__error popup__error_visible" id="profile-name-error"></span>
           <input type="text" class="popup__input popup__input_type_about" placeholder="Род занятий" id="profile-about"
-            name="profile-about">
-          <button class="popup__button-submit" type="submit">Сохранить</button>
+            name="profile-about" minlength="2" maxlength="200" required>
+            <span class="popup__error popup__error_visible" id="profile-about-error"></span>
+          <button class="popup__button" type="submit" id="button-profile">Сохранить</button>
         </form>
       </div>
     </div>
 
     <div class="popup popup-place" id="popup-add">
       <div class="popup__container popup-place__container">
-        <button class="popup__button-close popup-place__button-close" type="button"></button>
+        <button aria-label="Close" class="popup__button-close popup-place__button-close" type="button"></button>
         <h2 class="popup__title popup-place__title">Новое место</h2>
-        <form class="popup__form popup-place__form" name="place_edit" id="place-edit">
+        <form class="popup__form popup-place__form" name="place_edit" id="place-edit" novalidate>
           <input type="text" class="popup__input popup-place__input popup__input_type_place" placeholder="Название" id="place-name"
-            name="place-name">
-          <input type="text" class="popup__input popup-place__input popup__input_type_link" placeholder="Ссылка на картинку" id="place-link"
-            name="place-about">
-          <button class="popup__button-submit popup-place__button-submit" type="submit" id="picture-submit">Сохранить</button>
+            name="place-name" minlength="2" maxlength="30" required>
+            <span class="popup__error popup__error_visible" id="place-name-error"></span>
+          <input type="url" class="popup__input popup-place__input popup__input_type_link" placeholder="Ссылка на картинку" id="place-link"
+            name="place-link" required>
+            <span class="popup__error popup__error_visible" id="place-link-error"></span>
+          <button class="popup__button popup__button_disabled" type="submit" id="button-place" disabled>Сохранить</button>
         </form>
       </div>
     </div>
 
     <div class="popup popup-image" id="popup-image">
       <div class="popup-image__container">
-        <button class="popup-image__button-close" type="button"></button>
+        <button aria-label="Close" class="popup__button-close popup-image__button-close" type="button"></button>
         <img class="popup-image__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg" alt="Картинка 1">
         <div class="popup-image__title" id="caption">Заголовок</div>
       </div>
     </div>
   </div>
 
-  <template class="template">
+  <template class="template card-template_type_default">
     <div class="card">
       <img class="card__image" src="./images/baikal.jpg" alt="байкал">
-      <button class="card__delete" type="button"></button>
+      <button aria-label="Delete" class="card__delete" type="button"></button>
       <div class="card__text">
         <h3 class="card__title">Байкал</h3>
-        <button class="card__icon" type="button"></button>
+        <button aria-label="Like" class="card__icon" type="button"></button>
       </div>
     </div>
 </template>

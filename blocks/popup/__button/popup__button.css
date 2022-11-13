@@ -1,4 +1,4 @@
-/* .popup__button-submit {
+.popup__button {
   color: white;
   background-color: black;
   max-width: 358px;
@@ -11,13 +11,13 @@
   border: 1px;
 }
 
-.popup__button-submit:hover {
+.popup__button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
 
 @media screen and (max-width: 530px) {
-  .popup__button-submit {
+  .popup__button {
     max-width: 238px;
     height: 46px;
     font-weight: 400;
@@ -26,4 +26,4 @@
     text-align: center;
     margin: 45px 22px 25px;
   }
-} */
+}
