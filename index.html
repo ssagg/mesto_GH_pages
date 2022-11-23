@@ -19,11 +19,11 @@
         <img class="profile__avatar" src="./images/avatar.png" alt="аватар">
         <div class="profile__info">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button aria-label="Edit Profile"  class="profile__edit-button" type="button">
+          <button aria-label="Редактировать профиль"  class="profile__edit-button" type="button">
           </button>
           <p class="profile__about">Исследователь океана</p>
         </div>
-        <button aria-label="Add Place" class="profile__add-button" type="button">
+        <button aria-label="Добавить карточку места" class="profile__add-button" type="button">
         </button>
       </section>
 
@@ -39,7 +39,7 @@
 
     <div class="popup popup-profile" id="popup-edit" >
       <div class="popup__container">
-        <button aria-label="Close" class="popup__button-close popup-profile__button-close" type="button"></button>
+        <button aria-label="Закрыть" class="popup__button-close popup-profile__button-close" type="button"></button>
         <h2 class="popup__title">Редактировать профиль</h2>
         <form class="popup__form popup-profile__form" name="profile-edit" id="profile-edit" novalidate>
           <input type="text" class="popup__input popup__input_type_name" placeholder="Ваше имя" id="profile-name"
@@ -55,7 +55,7 @@
 
     <div class="popup popup-place" id="popup-add">
       <div class="popup__container popup-place__container">
-        <button aria-label="Close" class="popup__button-close popup-place__button-close" type="button"></button>
+        <button aria-label="Закрыть" class="popup__button-close popup-place__button-close" type="button"></button>
         <h2 class="popup__title popup-place__title">Новое место</h2>
         <form class="popup__form popup-place__form" name="place_edit" id="place-edit" novalidate>
           <input type="text" class="popup__input popup-place__input popup__input_type_place" placeholder="Название" id="place-name"
@@ -71,7 +71,7 @@
 
     <div class="popup popup-image" id="popup-image">
       <div class="popup-image__container">
-        <button aria-label="Close" class="popup__button-close popup-image__button-close" type="button"></button>
+        <button aria-label="Закрыть" class="popup__button-close popup-image__button-close" type="button"></button>
         <img class="popup-image__image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg" alt="Картинка 1">
         <div class="popup-image__title" id="caption">Заголовок</div>
       </div>
@@ -81,10 +81,10 @@
   <template class="template card-template_type_default">
     <div class="card">
       <img class="card__image" src="./images/baikal.jpg" alt="байкал">
-      <button aria-label="Delete" class="card__delete" type="button"></button>
+      <button aria-label="Удалить" class="card__delete" type="button"></button>
       <div class="card__text">
         <h3 class="card__title">Байкал</h3>
-        <button aria-label="Like" class="card__icon" type="button"></button>
+        <button aria-label="Лайк" class="card__icon" type="button"></button>
       </div>
     </div>
 </template>
